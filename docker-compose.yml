@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  JavaScript:
+    image: "node"
+    volumes:
+      - ./js:/app
+    command: node /app/main.js
