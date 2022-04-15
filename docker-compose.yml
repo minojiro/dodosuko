@@ -6,3 +6,8 @@ services:
     volumes:
       - ./js:/app
     command: node /app/main.js
+  cpp:
+    build: "cpp"
+    volumes:
+      - ./cpp:/app
+    command: sh -c "g++ -o /tmp/main /app/main.cpp && /tmp/main"
